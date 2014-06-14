@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="css/farmily_register.css">
+  <link rel="stylesheet" type="text/css" href="css/farmily_register_2.css">
+  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
+  <title>Farmily_農友登記</title>
+</head>
+
+<body>
+  <header>
+   <a href="farmily_home.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
+    
+   <nav>
+     <ul class="main_nav">
+       <li class="main_nav_li"><a href="farmily_home.html">首頁</a></li>
+       <li class="main_nav_li">
+         <a href="farmily_product.html">農產品</a>
+         <div class="sub">
+           <ul>
+             <li><a href="farmily_product.html">五穀雜糧</a></li>
+             <li><a href="farmily_product.html">蔬菜</a></li>
+             <li><a href="farmily_product.html">畜產/水產</a></li>
+             <li><a href="farmily_product.html">水果</a></li>
+             <li><a href="farmily_product.html">手製品</a></li>
+           </ul>
+         </div>
+       </li>
+       <li class="main_nav_li"><a href="farmily_farmer_list.html">農友列表</a></li>
+       <li class="main_nav_li"><a href="farmily_register.html">農友登記</a></li>
+       <li class="main_nav_li"><a href="farmily_aboutus.html">關於我們</a></li>
+       <li class="main_nav_li"><a href="farmily_blog.html">部落格</a></li>
+     </ul>
+   </nav> 
+ </header>
+
+<section>
+  <ul class="title">
+    <li>
+      <img src="img/leaf.png"></img>
+      <p>農友登記</p>
+    </li>
+  </ul> 
+  <div class="content">
+    <ul class="step">
+      <li class="step_1">
+        <p>1：填寫基本資料</p>
+      </li>
+      <li class="step_2">
+        <p>2：填寫農園資訊</p>
+      </li>
+      <li class="step_3">
+        <p>3：新增農產品</p>
+      </li>
+    </ul> 
+	  <div class="form">
+    <form class="pure-form pure-form-stacked" method="link" action="farmily_register_3.html">
+      <fieldset>
+        <div class="format">
+            <label for="farm_name">農園名稱</label>
+            <input id="farm_name" type="text" class="pure-input-rounded" placeholder="大明的開心農場">
+        </div>
+        <div class="format photo">
+             <img src="img/farm_photo.png" alt="farm_photo">
+             <button type="submit" id="upload" class="pure-button">上傳農園照片</button>
+        </div>
+        <div class="format">
+            <label for="address">農園名稱</label>
+            <input id="address" type="text" class="pure-input-rounded" placeholder="請輸入完整地址">
+        </div>
+        <div class="format">
+            <label for="farm_story">農園故事</label>
+            <p>200字內，諸如得獎事跡、種植理念、農產特色、農法等等</p>
+            <textarea id="farm_story" type="text" class="pure-input-rounded"></textarea>
+        </div>
+        <div class="format">
+            <button type="submit" id="button" class="pure-button">> 下一步</button>  
+        </div>  
+      </fieldset>
+    </form>
+    </div>
+    
+  </div> 
+</section>
+
+<footer>
+	<ul>
+         <li><a href="..">交易提醒</a></li>
+         <li><a href="..">聯絡我們</a></li>
+     </ul>
+</footer>
+
+</body>
+</html>

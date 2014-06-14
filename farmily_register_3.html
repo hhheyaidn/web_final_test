@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="css/farmily_register.css">
+  <link rel="stylesheet" type="text/css" href="css/farmily_register_3.css">
+  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
+  <title>Farmily_農民登記</title>
+</head>
+
+<body>
+  <header>
+   <a href="farmily_home.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
+    
+   <nav>
+     <ul class="main_nav">
+       <li class="main_nav_li"><a href="farmily_home.html">首頁</a></li>
+       <li class="main_nav_li">
+         <a href="farmily_product.html">農產品</a>
+         <div class="sub">
+           <ul>
+             <li><a href="farmily_product.html">五穀雜糧</a></li>
+             <li><a href="farmily_product.html">蔬菜</a></li>
+             <li><a href="farmily_product.html">畜產/水產</a></li>
+             <li><a href="farmily_product.html">水果</a></li>
+             <li><a href="farmily_product.html">手製品</a></li>
+           </ul>
+         </div>
+       </li>
+       <li class="main_nav_li"><a href="farmily_farmer_list.html">農友列表</a></li>
+       <li class="main_nav_li"><a href="farmily_register.html">農友登記</a></li>
+       <li class="main_nav_li"><a href="farmily_aboutus.html">關於我們</a></li>
+       <li class="main_nav_li"><a href="farmily_blog.html">部落格</a></li>
+     </ul>
+   </nav> 
+ </header>
+ 
+ <section>
+  <ul class="title">
+    <li>
+      <img src="img/leaf.png"></img>
+      <p>農友登記</p>
+    </li>
+  </ul> 
+  <div class="content">
+    <ul class="step">
+      <li class="step_1">
+        <p>1：填寫基本資料</p>
+      </li>
+      <li class="step_2">
+        <p>2：填寫農園資訊</p>
+      </li>
+      <li class="step_3">
+        <p>3：新增農產品</p>
+      </li>
+    </ul> 
+    
+    <div class="form">
+    <form class="pure-form pure-form-stacked" method="link" action="#">
+      <fieldset>
+        <div class="format">
+              <label for="category">農產品分類</label>
+              <div class="select-list">
+              <select id="category">
+                <option>五穀雜糧</option>
+                <option>蔬菜</option>
+                <option>畜產/水產</option>
+                <option>水果</option>
+                <option>手製品</option>
+              </select>
+              </div>
+              <div class="format photo">
+                <img src="img/product_photo.png" alt="product_photo">
+                <button type="submit" id="upload" class="pure-button">上傳農產品照片</button>
+              </div>
+              <div class="format">
+                <label for="name">農產品名稱</label>
+                <input id="name" type="text" class="pure-input-rounded" placeholder="花椰菜">
+              </div>
+              <div class="format">
+                <label for="price">價格</label>
+                <input id="price" type="text" class="pure-input-rounded" placeholder="20元">
+              </div>
+              <div class="format">
+                <label for="scale">規格<p>重量、販賣形式</p></label>
+                <input id="scale" type="text" class="pure-input-rounded" placeholder="一公斤，紙箱裝">
+              </div>
+              <div class="format">
+                <label for="description">產品敘述<p id="move">200字內</p></label>
+                <textarea id="description" type="text" class="pure-input-rounded"></textarea>
+              </div>
+              <div class="format">
+                <label for="transport">運送方式、運費</label>
+                <div class="select-list">
+                  <select id="trans">
+                    <option>白狗宅急便，200元</option>
+                    <option>OOXX宅急便，120元</option>
+                  </select>
+                </div>
+              </div>
+              <div class="format">
+                <label for="pay">付款方式</label>
+                <div class="select-list">
+                  <select id="money">
+                    <option>貨到付款</option>
+                    <option>超商取貨</option>
+                  </select>
+                </div>
+              </div>
+              <div class="format">
+                <button type="submit" id="new" class="pure-button">新增更多農產品</button>  
+              </div>
+              <div class="format">
+                <button type="submit" id="save" class="pure-button">存檔，以後再新增</button>  
+              </div>  
+      </fieldset>
+    </form>
+    </div>
+    
+  </div>
+</section>
+
+<footer>
+  <ul>
+         <li><a href="..">交易提醒</a></li>
+         <li><a href="..">聯絡我們</a></li>
+     </ul>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+body{
+  background:url(../img/background.jpg) repeat;
+  font-family: "Helvetica Neue",Arial,"HeitiTC","LiHei Pro","微軟正黑體","Microsoft Jhenghei",sans-serif;
+  margin: 0px;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+footer{
+height: 100px;
+background: #3ea265;
+background: -moz-linear-gradient(left, #3ea265 13%, #52ab75 25%, #65b584 38%, #78be94 50%, #8bc7a3 62%, #b2dac1 74%, #d8ece0 88%, #ffffff 100%); 
+background: -webkit-gradient(linear, left top, right top, color-stop(13%,#3ea265), color-stop(25%,#52ab75), color-stop(38%,#65b584), color-stop(50%,#78be94), color-stop(62%,#8bc7a3), color-stop(74%,#b2dac1), color-stop(88%,#d8ece0), color-stop(100%,#ffffff)); 
+background: -webkit-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+background: -o-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+background: -ms-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+background: linear-gradient(to right, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ea265', endColorstr='#ffffff',GradientType=1 ); 
+position: relative;
+top: 1700px;
+}
+
+footer li{
+font-size:24px;
+display:inline;
+list-style:none;
+margin-right:50px;
+position:relative;
+top: 50px;
+left: 100px;
+}
+
+header{
+  background:#3EA265;
+  height : 150px;
+}
+
+.logo{
+  height:150px;
+  position:absolute;
+}
+
+.main_nav{
+  float:right;
+}
+
+.main_nav_li{
+  font-size:24px;
+  display:inline;
+  list-style:none;
+  position:relative;
+  margin-right:50px;
+  top:105px;
+}
+
+.sub{
+  display: none;
+  height: auto;
+  left: 0;
+  margin: 1px 0 0;
+  overflow: hidden;
+  position: absolute;
+  width: 210px;
+  z-index: 6666;
+}
+
+.sub ul{
+  margin: 0;
+  list-style: none;
+  position: relative;
+  border: 5px solid #dcdcdc;
+  background: #fff;
+  width: 200px;
+  padding: 15px 0;
+}
+
+.sub li {
+float: none;
+margin: 0 0 1px;
+}
+
+.main_nav li:hover .sub{
+  display: block;
+}
+
+.sub a{
+  color: #5C5C5C;
+  display: block;
+  font-size: 14px;
+  height: 25px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  margin: 0 0 0 15px;
+  padding: 4px 0 0 10px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.sub li:hover{
+  background:gray;
+}
+
+.sub li:hover a{
+  color:white;
+}
+
+section{
+	background:url(../img/background_inner.jpg);
+	height:1500px;
+	width:950px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top:-100px;
+	margin-left:-480px;
+}
+
+section nav{
+position:relative;
+	top:50px;
+	left:20px;
+}
+section nav li{
+	list-style:none;
+	margin-bottom:10px;
+	width:120px;
+	padding:10px;
+}
+
+section nav a{
+	font-size:18px;
+	color:black;
+	padding:10px;
+}
+
+.latest{
+	background:rgba(62,162,101,0.5);
+	
+}
+
+section nav li:hover{
+  background:gray;
+}
+
+section nav li:hover a{
+  color:white;
+}
+
+.hot{
+	border-top:1px solid;
+	width:200px;
+	margin-left:40px;
+	margin-top:80px;
+}
+
+.hot img{
+	margin-top:10px;
+}
+
+.hot a{
+	color:black;
+	font-size:24px;
+	position:relative;
+	top:-20px;
+	left:10px;
+}
+
+.article img {
+	width:10%;
+	border-radius: 50%;
+}
+
+.article h3{
+	position:relative;
+	top:-100px;
+	left:120px;
+}
+
+.article a{
+	position:relative;
+	top:-130px;
+	left:110px;
+	color:black;
+}
+
+.article{
+	position:relative;
+	left:50px;
+	margin-bottom:-70px;
+}
+
+.top{
+	background-color:rgba(192,192,192,0.5);
+	width:500px;
+	height:1100px;
+	padding:30px;
+	border-radius:2em;
+	position:relative;
+	left:300px;
+	top:-1050px;
+	margin-bottom:40px;
+}
+
+.top h3{
+	color:#52AB75;
+	position:relative;
+	left:40px;
+	top:-10px;
+}
+
+
+
+#time{
+	position:relative;
+	left:40px;
+	top:-5px;
+}
+
+.top article{
+	position:relative;
+	background:white;
+	padding:10px;
+	width:450px;
+	height:600px;
+	left:10px;
+	margin:10px;
+}
+
+.top img{
+	width:400px;
+	margin:25px;
+}
+
+.top article p{
+	font-size:12px;
+	width:400px;
+	margin:25px;
+
+}
+
+.message h3{
+	color:black;
+}

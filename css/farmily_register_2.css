@@ -1,0 +1,45 @@
+footer{
+  top:1300px;
+}
+
+section{
+  height: 1100px;
+}
+
+.content{
+  height: 900px;
+}
+
+.step_2{
+  background-color: rgb(120,120,120); 
+} 
+
+.step_1,.step_3{
+  background: rgba(248,248,248,0.5);
+}
+
+.format p{
+  color: gray;
+}
+
+#farm_story{
+  height: 300px;
+  width: 90%;
+}
+
+#button{
+  margin-bottom: 50px;
+}
+
+#button:hover, #upload:hover{
+	background-color:#44c767;
+}
+
+
+
+
+
+
+
+
+

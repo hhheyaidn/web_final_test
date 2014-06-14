@@ -1,0 +1,116 @@
+footer{
+  top:1500px;
+}
+
+section{
+  height: 1300px;
+}
+
+.content{
+  height: 1100px;
+}
+
+.select-list {
+    position: relative;
+    display: inline-block;
+}
+
+    .select-list select {
+    	width: 375px;
+        display: inline-block;
+        padding: 0.5em 0.7em;
+        margin: 0;
+        font: inherit;
+        outline:none; /* remove focus ring from Webkit */
+        line-height: 1.2;
+        background: #f8f8f8;
+        
+        -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
+        
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        border-radius: 40px;
+    }
+
+    /* for Webkit's CSS-only solution */
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+        .custom-select select {
+            padding-right:30px;    
+        }
+    }
+    
+    /* Select arrow styling */
+    .select-list:after {
+        content: "▼";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 60%;
+        line-height: 30px;
+        padding: 0 7px;
+        background: #bbb;
+        color: white;
+        
+        pointer-events:none;
+        
+        -webkit-border-radius: 0 40px 40px 0;
+        -moz-border-radius: 0 40px 40px 0;
+        border-radius: 0 40px 40px 0;
+    }
+    
+    .no-pointer-events .select-list:after {
+        content: none;
+    }
+
+
+.step_1{
+  background: rgba(248,248,248,0.5);
+}
+
+.step_3{
+  background-color: rgb(120,120,120);
+}
+
+.format p{
+  margin-left: 120px;	
+  display: inline;
+  color: gray;
+}
+
+#description{
+  height: 130px;
+  width: 90%;
+}
+
+#move{
+	margin-left: 90px;
+}
+
+#new, #save{
+  width: 30%;
+  text-align: center;
+  font-style: bold;
+  color: white;
+  border-radius: 40px;
+  background: #52AB75;
+  margin-top: 38px;
+}
+
+#save{
+  background: rgb(120,120,120);
+  color: black;
+  position: relative;
+  left: 300px;
+  top: -123px;
+}
+
+#new:hover, #upload:hover{
+	background-color:#44c767;
+}
+
+#save:hover{
+	background-color: rgb(96,96,96);
+}
+
+

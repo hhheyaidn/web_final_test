@@ -1,0 +1,233 @@
+body{
+  background:url(../img/background.jpg) repeat;
+  font-family: "Helvetica Neue",Arial,"HeitiTC","LiHei Pro","微軟正黑體","Microsoft Jhenghei",sans-serif;
+  margin: 0px;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+header{
+  background:#3EA265;
+  height : 150px;
+}
+
+.logo{
+  height:150px;
+  position:absolute;
+}
+
+.main_nav{
+  float:right;
+}
+
+.main_nav_li{
+  font-size:24px;
+  display:inline;
+  list-style:none;
+  position:relative;
+  margin-right:50px;
+  top:105px;
+}
+
+.sub{
+  display: none;
+  height: auto;
+  left: 0;
+  margin: 1px 0 0;
+  overflow: hidden;
+  position: absolute;
+  width: 210px;
+  z-index: 6666;
+}
+
+.sub ul{
+  margin: 0;
+  list-style: none;
+  position: relative;
+  border: 5px solid #dcdcdc;
+  background: #fff;
+  width: 200px;
+  padding: 15px 0;
+}
+
+.sub li {
+float: none;
+margin: 0 0 1px;
+}
+
+.main_nav li:hover .sub{
+  display: block;
+}
+
+.sub a{
+  color: #5C5C5C;
+  display: block;
+  font-size: 14px;
+  height: 25px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  margin: 0 0 0 15px;
+  padding: 4px 0 0 10px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.sub li:hover{
+  background:gray;
+}
+
+.sub li:hover a{
+  color:white;
+}
+
+footer{
+	height: 100px;
+	background: #3ea265;
+	background: -moz-linear-gradient(left, #3ea265 13%, #52ab75 25%, #65b584 38%, #78be94 50%, #8bc7a3 62%, #b2dac1 74%, #d8ece0 88%, #ffffff 100%); 
+	background: -webkit-gradient(linear, left top, right top, color-stop(13%,#3ea265), color-stop(25%,#52ab75), color-stop(38%,#65b584), color-stop(50%,#78be94), color-stop(62%,#8bc7a3), color-stop(74%,#b2dac1), color-stop(88%,#d8ece0), color-stop(100%,#ffffff)); 
+	background: -webkit-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+	background: -o-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+	background: -ms-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+	background: linear-gradient(to right, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ea265', endColorstr='#ffffff',GradientType=1 ); 
+	position: relative;
+	top: 1400px;
+}
+
+footer li{
+  font-size:24px;
+  display:inline;
+  list-style:none;
+  margin-right:50px;
+  position:relative;
+  top: 50px;
+  left: 100px;
+}
+
+section{
+  background:url(../img/background_inner.jpg);
+  height:1200px;
+  width:950px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  
+  margin-top:-100px;
+  margin-left:-480px;
+}
+
+.title li{
+  width:870px;
+  position:relative;
+  list-style:none;
+  border-bottom:1px solid;
+  border-bottom-color: #000;
+  padding-bottom:3px;
+  margin-top:10px;
+}
+
+.title li p{
+  font-size:24px;
+  color:black;
+  margin-left:6px;
+  display: inline;
+}
+
+.content{
+  background-color:rgba(192,192,192,0.5);
+  border-radius: 40px; 
+  height: 1000px;
+  width: 800px;
+  margin-top: 80px;
+  padding-top: 30px;
+  left:50%;
+  top:50%;
+  margin-top:40px;
+  margin-left:75px;
+}
+
+.step li, .form li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 30%;  
+  left:50%;
+  top:50%;
+  margin-left: 5px;
+}
+
+.step_1{
+  border-radius: 23px 0px 0px 23px;
+  background-color: rgb(120,120,120); 
+} 
+
+.step_2, .step_3{
+  background: rgba(248,248,248,0.5);
+}
+
+.step_3{
+  border-radius: 0px 23px 23px 0px;
+}
+
+.form form{
+  margin-left: 50px;
+}
+
+.form input{
+  width: 50%;
+}
+
+.format{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+#button{
+  width: 30%;
+  text-align: center;
+  font-style: bold;
+  color: white;
+  border-radius: 40px;
+  background: #52AB75;
+  border-radius: 40px;
+  margin-top: 38px;
+}
+
+.format img{
+  width: 25%;
+  float: right;
+  position: relative;
+  left: -100px;
+  top: -100px;
+}
+
+#upload{
+  width: 30%;
+  text-align: center;
+  font-style: bold;
+  color: white;
+  border-radius: 40px;
+  background: #52AB75;
+  border-radius: 40px;
+  float: right;
+  position: relative;
+  left: 107px;
+  top: 80px;
+}
+
+#button:hover, #upload:hover{
+  background-color:#44c767;
+}
+
+
+
+
+
+
+
+
+
+
