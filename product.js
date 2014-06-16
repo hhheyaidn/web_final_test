@@ -16,7 +16,7 @@ $(function(){
 		var $this = $(this),
 			_clickTab = $this.find('a').attr('href');
 			
-			console.log($this);
+			console.log($this.li.textContext);
 		// 把目前點擊到的 li 頁籤加上 .active
 		// 並把兄弟元素中有 .active 的都移除 class
 		$this.addClass('active').siblings('.active').removeClass('active');
@@ -84,7 +84,6 @@ function getData(page,category){
       //alert(1);
       $('.content').html("");
       var objList = results.map(function (e){ return e.toJSON() });
-      console.log(objList);
       objList.forEach(function (e){
         queryP.descending("createdAt");
         queryP.equalTo("Farmer",e.objectId);
