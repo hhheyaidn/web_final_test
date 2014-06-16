@@ -4,6 +4,74 @@ body{
   margin: 0px;
 }
 
+
+
+
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.abgne_tab {
+	clear: left;
+	width: 890px;
+	margin: 10px 0;
+}
+ul.tabs {
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+}
+ul.tabs li {
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border: 1px solid #999;
+	border-left: none;
+	background: #e1e1e1;
+}
+ul.tabs li a {
+	display: block;
+	padding: 0 20px;
+	color: #000;
+	border: 1px solid #fff;
+	text-decoration: none;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+}
+ul.tabs li.active  {
+	background: #fff;
+	border-bottom: 1px solid#fff;
+}
+ul.tabs li.active a:hover {
+	background: #fff;
+}
+div.tab_container {
+	clear: left;
+	width: 100%;
+	border: 1px solid #999;
+	border-top: none;
+	background: #fff;
+}
+div.tab_container .tab_content {
+	padding: 20px;
+}
+div.tab_container .tab_content h2 {
+	margin: 0 0 20px;
+}
+
+
+
+
+
+
+
 a{
   text-decoration:none;
   color:white;
@@ -132,84 +200,3 @@ section{
 	width:890px;
 }
 
-.tabs{
-    position: absolute;
-	left:50%;
-	top:50%;
-	
-	margin-top:-350px;
-	margin-left:-450px;
-    width:900px;
-    height:800px;
-}
-
-.tab{
-    float:left;
-}
-
-.tab > input[type=radio]{
-    display:none;
-}
-
-.tab > label{
-    display:block;
-    position:relative;
-    width:149px;
-    height:20px;
-    margin-right:-1px;
-    padding:5px 15px;
-    background:#DDD;
-    border:1px solid #AAA;
-}
-
-.tab > .content{
-    display:none;
-    position:absolute;
-    top:30px;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index:1;
-    padding:10px;
-    background:#FFF;
-    border:1px solid #AAA;
-}
-
-.tab > input[type=radio]:checked + label{
-    background:#FFF;
-    border-bottom:1px solid transparent;
-    z-index:2;
-}
-
-.tab > input[type=radio]:checked ~ .content{
-    display:block;    
-}
-
-td{
-	width:330px;
-	height:145px;
-	border:1px solid black;
-}
-
-td img{
-	width:40%;
-	position:relative;
-	top:10px;
-	left:10px;
-}
-
-#name{
-	color:black;
-	font-size:24px;
-	position:relative;
-	top:-60px;
-	left:30px;
-}
-
-#product{
-	color:black;
-	position:relative;
-	top:-30px;
-	left:150px;
-	font-size:12px;
-}
