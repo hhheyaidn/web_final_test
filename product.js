@@ -30,43 +30,7 @@ $(function(){
 });
 
 function getData(page,category){
-alert(0);
- /* if(tab==="tab1"){
-    $('#tab1').attr("checked","checked");
-    $('#tab2').removeAttr("checked");
-    $('#tab3').removeAttr("checked"); 
-    $('#tab4').removeAttr("checked");  
-    $('#tab5').removeAttr("checked");
-    alert($('#tab2').attr("checked"));
-  }
-  else if(tab==="tab2"){
-    $('#tab2').attr("checked","checked");
-    $('#tab1').removeAttr("checked");
-    $('#tab3').removeAttr("checked"); 
-    $('#tab4').removeAttr("checked");  
-    $('#tab5').removeAttr("checked"); 
-  }
-  else if(tab==="tab3"){
-    $('#tab3').attr("checked","checked");
-    $('#tab2').removeAttr("checked");
-    $('#tab1').removeAttr("checked"); 
-    $('#tab4').removeAttr("checked");  
-    $('#tab5').removeAttr("checked"); 
-  }
-  else if(tab==="tab4"){
-    $('#tab4').attr("checked","checked");
-    $('#tab2').removeAttr("checked");
-    $('#tab3').removeAttr("checked"); 
-    $('#tab1').removeAttr("checked");  
-    $('#tab5').removeAttr("checked"); 
-  }
-  else if(tab==="tab5"){
-    $('#tab5').attr("checked","checked");
-    $('#tab2').removeAttr("checked");
-    $('#tab3').removeAttr("checked"); 
-    $('#tab4').removeAttr("checked");  
-    $('#tab1').removeAttr("checked"); 
-  }*/
+
   var limit = 15;
   var skip = (page-1) * limit;
   var Farmer = Parse.Object.extend("Farmer");
