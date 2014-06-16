@@ -27,6 +27,9 @@ $(function(){
 	}).find('a').focus(function(){
 		this.blur();
 	});
+	$('#123').click(function(){
+		getData(1,'五穀雜糧');
+	})
 });
 
 function getData(page,category){	
