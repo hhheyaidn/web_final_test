@@ -30,6 +30,7 @@ $(function(){
 });
 
 function getData(page,category){
+alert(0);
  /* if(tab==="tab1"){
     $('#tab1').attr("checked","checked");
     $('#tab2').removeAttr("checked");
