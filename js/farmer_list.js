@@ -94,4 +94,5 @@ function getData(page,category){
     }
   });
   event.preventDefault();
+  return true;
 }
