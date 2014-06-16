@@ -83,7 +83,7 @@ alert(0);
   query.find({
     success: function(results) {
       //alert(1);
-      $('.tab_content'').html("");
+      $('.tab_content').html("");
       var objList = results.map(function (e){ return e.toJSON() });
       objList.forEach(function (e){
         queryP.descending("createdAt");
