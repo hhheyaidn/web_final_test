@@ -27,10 +27,10 @@ $(function(){
 	}).find('a').focus(function(){
 		this.blur();
 	});
-	$('#123').click(function(){
+	$('.123').click(function(){
 		getData(1,'五穀雜糧');
 	});
-	$('#456').click(function(){
+	$('.456').click(function(){
 		getData(1,'北部');
 		alert(1);
 	});
