@@ -27,6 +27,7 @@ ul.tabs {
 ul.tabs li {
 	float: left;
 	height: 31px;
+	width:160px;
 	line-height: 31px;
 	overflow: hidden;
 	position: relative;
