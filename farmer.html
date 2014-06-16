@@ -8,35 +8,61 @@
   <title>Farmily</title>
 </head>
 <body>
-  <header>
-   <a href="farmily_home.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
-    
-   <nav>
+  <header>   
+   	<a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
+   	<nav>
      <ul class="main_nav">
-       <li class="main_nav_li"><a href="farmily_home.html">首頁</a></li>
+       <li class="main_nav_li">
+       	<a href="index.html">首頁</a>
+       </li>
        <li class="main_nav_li">
          <a href="farmily_product.html">農產品</a>
          <div class="sub">
            <ul>
-             <li><a href="farmily_product.html">五穀雜糧</a></li>
-             <li><a href="farmily_product.html">蔬菜</a></li>
-             <li><a href="farmily_product.html">畜產/水產</a></li>
-             <li><a href="farmily_product.html">水果</a></li>
-             <li><a href="farmily_product.html">手製品</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '五榖雜糧');">五穀雜糧</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '蔬菜');">蔬菜</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '畜產/水產');">畜產/水產</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '水果');">水果</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '手製品');">手製品</a></li>
            </ul>
          </div>
        </li>
-       <li class="main_nav_li"><a href="farmily_farmer_list.html">農友列表</a></li>
-       <li class="main_nav_li"><a href="farmily_register.html">農友登記</a></li>
-       <li class="main_nav_li"><a href="farmily_aboutus.html">關於我們</a></li>
-       <li class="main_nav_li"><a href="farmily_blog.html">部落格</a></li>
+       <li class="main_nav_li">
+       	<a href="farmily_farmer_list.html">農友列表</a>
+       		<div class="sub">
+           <ul>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '北部');">北部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '中部');">中部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '南部');">南部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '東部');">東部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '外島');">外島</a></li>
+           </ul>
+         </div>
+       </li>
+       <li class="main_nav_li">
+       	<a href="farmily_aboutus.html">關於農家</a>
+       </li>
+       <div class="member">
+	       <li class="main_nav_li">
+	       	<a class="member-btn" href="farmily_register.html">農友登記</a>
+	       </li>
+	       <li class="main_nav_li">
+	       	<a class="member-btn" href="farmily_login.html">登入</a>
+	       </li>
+   	       <li class="main_nav_li">
+	       	<a class="member-btn" href="..">管理農園</a>
+	       </li>
+   	       <li class="main_nav_li">
+	       	<a class="member-btn" href="..">登出</a>
+	       </li>
+	   </div>
      </ul>
-   </nav> 
- </header>
+    </nav> 
+  </header>
   
   <section>
 	<div>
-		<img src="img/farmer_main.jpg" class="farmer_main">
+		<img src="img/farmer_main.JPG" class="farmer_main">
 		<img src="img/farmer.jpg" class="farmer_head">
 		<h2 class="farmer_note">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;香吉士果園&nbsp;&nbsp;王邦任</h2>
 	</div>

@@ -14,8 +14,8 @@ footer{
 	background: url(../img/footer.jpg) repeat;
 	position: relative;
 	top: 30px;
-	padding-left: 60px;
 	background-color: #336600;
+	display: none;
 }
 
 footer li{
@@ -37,6 +37,7 @@ header{
 	height: 90px;
 	padding: 0 100px 0 100px;
 	background: url(../img/banner.png) repeat;
+	margin-bottom: 30px;
 }
 
 header a:hover{
@@ -146,10 +147,15 @@ nav{
 	color:white;
 }
 
+.list-img{
+	height: 50px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
 section{
 	/*background-color: white;*/
-	width: 950px;
-	height: auto;
+	width: 500px;
 	position: relative;
 	/*left:50%;*/
 	top: 10px;
@@ -159,30 +165,12 @@ section{
 	border-radius: 2em;
 }
 
-.banner{
-	height: 300px;
-	background:url(../img/index_pic.jpg) 50% 50% no-repeat;
-	margin: 1.3em 0 0 0;
-	border-radius: 2em 2em 0 0;
-}
-
-.slogan{
-	position: absolute;
-	font-size: 36px;
-	background: rgba(195,216,37,0.5);
-	color: white;
-	padding: 7px;
-	padding-left: 50px;
-	margin: 200px 0 0 0;
-	float: left;
-}
-
 .content{
 	display: inline-block;
-	width: 950px;
+	width: 500px;
 	background:url(../img/background_inner.jpg);
 	background-repeat: repeat-y;
-	border-radius: 0 0 2em 2em;
+	border-radius: 2em;
 }
 
 .title{
@@ -192,117 +180,25 @@ section{
 	margin: 1em 30px 1.3em 30px;
 	font-size: 20px;
 	color: black;
-	width: 880px;
+	width: 430px;
 }
 
-.list-img{
-	height: 50px;
-	margin-right: 10px;
-	margin-left: 10px;
+#button{
+  width: 30%;
+  text-align: center;
+  font-style: bold;
+  color: white;
+  border-radius: 40px;
+  background: #52AB75;
+  border-radius: 40px;
+  margin-top: 38px;
 }
 
-.searchbar form{
-	margin: 0 auto;
-	width: 90%;
+#button:hover{
+  background-color:#44c767;
 }
 
-.story{
-	display: inline-block;
-	position: relative;
-	height: 400px;
-}
-
-.story-list{
-	position: relative;
-	width: 900px;
-	margin: 0px 40px;
-}
-
-.story_1 img,.story_2 img{
-	height: 150px;
-	width: 150px;
-	position: relative;
-	border-radius: 50%;
-	border: 5px solid #fff;
-	top: 15px;
-	float: left;
-}
-
-.story_1,.story_2{
-	display: inline-block;
-	background: rgba(195,216,37,0.5);
-	margin-right: 20px;
-	padding: 10px;
-	width: 400px;
-	height: 200px;
-	border-radius: 0.5em;
-}
-
-.story_1 h3,.story_2 h3{
-	width: 210px;
-	float: right;
-	color: #52AB75;
-	position: relative;
-}
-
-
-.name{
-	width: 210px;
-	float: right;
-	font-size: 18px;
-	color: black;
-	position: relative;
-}
-
-.story-description{
-	width: 210px;
-	float: right;
-	font-size: 12px;
-	color: black;
-	position: relative;
-	margin-top: 10px;
-}
-
-.catogory{
-	position: relative;
-	text-align: center;
-}
-
-.cereals,.fruit,.vegetable,.animal,.diy{
-	width: 170px;
-	height: 170px;
-	display: inline-block;
-}
-
-.cereals img,.fruit img,.vegetable img,.animal img,.diy img{
-	width: 150px;
-	height: 120px;
-}
-
-.cereals a,.fruit a,.vegetable a,.animal a,.diy a{
-	color:black;
-}
-
-.fb-like-box{
-	position: relative;
-	margin: 10px 45px;
-}
-
-.story_button{
-	background-color: #44c767;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 25px;
-	border: 1px solid #18ab29;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 12px;
-	padding: 5px 11px;
-	/*text-shadow:0px 1px 0px #2f6627;*/
-	position: relative;
-	float: right;
-	margin-top: 2px;
-}
-.story_button:hover {
-	background-color:#5cbf2a;
+.form{
+	margin-left: 40px;
+	margin-bottom: 20px;
 }

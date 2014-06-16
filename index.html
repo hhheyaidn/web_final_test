@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
+  <link rel="stylesheet" type="text/css" href="css/searchbar.css">
+  <link rel="stylesheet" type="text/css" href="css/farmily_home.css">
+  <title>Farmily | 農家</title>
+</head>
+<body>
+  <header>   
+   	<a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
+   	<nav>
+     <ul class="main_nav">
+       <li class="main_nav_li">
+       	<a href="index.html">首頁</a>
+       </li>
+       <li class="main_nav_li">
+         <a href="farmily_product.html">農產品</a>
+         <div class="sub">
+           <ul>
+             <li><a href="farmily_product.html" onClick="getData(1, '五榖雜糧');">五穀雜糧</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '蔬菜');">蔬菜</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '畜產/水產');">畜產/水產</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '水果');">水果</a></li>
+             <li><a href="farmily_product.html" onClick="getData(1, '手製品');">手製品</a></li>
+           </ul>
+         </div>
+       </li>
+       <li class="main_nav_li">
+       	<a href="farmily_farmer_list.html">農友列表</a>
+       		<div class="sub">
+           <ul>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '北部');">北部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '中部');">中部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '南部');">南部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '東部');">東部</a></li>
+             <li><a href="farmily_farmer_list.html" onClick="getData(1, '外島');">外島</a></li>
+           </ul>
+         </div>
+       </li>
+       <li class="main_nav_li">
+       	<a href="farmily_aboutus.html">關於農家</a>
+       </li>
+       <div class="member">
+	       <li class="main_nav_li">
+	       	<a class="member-btn" href="farmily_register.html">農友登記</a>
+	       </li>
+	       <li class="main_nav_li">
+	       	<a class="member-btn" href="farmily_login.html">登入</a>
+	       </li>
+   	       <li class="main_nav_li">
+	       	<a class="member-btn" href="..">管理農園</a>
+	       </li>
+   	       <li class="main_nav_li">
+	       	<a class="member-btn" href="..">登出</a>
+	       </li>
+	   </div>
+     </ul>
+    </nav> 
+  </header>
+  
+  <section>
+	<div class="banner">
+		<h2 class="slogan">重新牽起農村、都市、大地的手。</h2>
+	</div>
+
+	<div class="content">
+
+		<div class="searchbar">
+			<div class="title">
+				<img class="list-img" src="img/leaf.png"></img>農產品搜尋
+			</div>
+			<form class="search" method="post" action="index.html" >
+				<input type="text" name="q" placeholder="請輸入關鍵字" />
+	   		</form>
+   		</div>
+
+		<div class="story">
+			<div class="title">
+				<img class="list-img" src="img/leaf.png"></img>本月主打星
+			</div>
+			<div class="story-list">
+				<div class="story_1">
+					<img src="img/farmer_2.jpg"></img>
+					<h3>原鄉自然生態農園</h3>
+					<a class="name" href="">郭子媽</a>
+					<div class="story-description">
+					我沒有所謂的高學歷，但從學習的過程中，我認真的去思考與對待簡單而且對的事，最初的務農，我想的是簡單而且可以維生的生活，現在，務農多了一份對土地的愛惜，多了一份對人的責任。
+					<a href="farmily_blog_article.html" class="story_button">繼續閱讀</a>
+					</div>
+				</div>	
+				<div class="story_2">
+					<img src="img/farmer.jpg"></img>
+					<h3>灣寶農學園</h3>
+					<a class="name" href="">王邦任</a> 
+					<!-- where does the link link to? farmer page? -->
+					<div class="story-description">
+					現在有越來越多的知識農民回鄉種田，除了喜歡農村謐靜的生活型態，更著眼於生態而願意選擇一條不一樣的道路。我們也希望年輕人歸鄉，除了不愁溫飽，也為自己的土地盡一份心力。
+					<a href="farmily_blog_article.html" class="story_button">繼續閱讀</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+   		<div class="catogory">
+			<div class="cereals">
+				<a href="farmily_product.html"><img src="img/cereals.jpg"></img></a>
+				<a href="farmily_product.html"><p>五穀雜糧</p></a>
+			</div>
+			<div class="fruit">
+				<a href="farmily_product.html"><img src="img/fruit.jpg"></img></a>
+				<a href="farmily_product.html"><p>水果</p></a>
+			</div>
+			<div class="vegetable">
+				<a href="farmily_product.html"><img src="img/vegetable.jpg"></img></a>
+				<a href="farmily_product.html"><p>蔬菜</p></a>
+			</div>
+			<div class="animal">
+				<a href="farmily_product.html"><img src="img/animal.jpg"></img></a>
+				<a href="farmily_product.html"><p>畜產/水產</p></a>
+			</div>
+			<div class="diy">
+				<a href="farmily_product.html"><img src="img/diy.jpg"></img></a>
+				<a href="farmily_product.html"><p>手製品</p></a>
+			</div>
+		</div>
+	
+		<div class="fb-like-box" 
+		data-href="https://www.facebook.com/BuyDirectlyFromFarmers?fref=ts" data-width="900" data-height="241" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=243054512512669&amp;color_scheme=light&amp;header=false&amp;height=2">
+		<span style="vertical-align: bottom; width: 560px; height: 241px;">
+			<iframe name="f31472f518" width="560px" height="241px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FBuyDirectlyFromFarmers%3Ffref%3Dts&width=900px&height=258&colorscheme=light&show_faces=true&header=false&stream=false&show_border=false" style="border: none; visibility: visible; width: 900px; height: 241px;" class=""></iframe>
+		</span>
+		</div>
+	</div>
+  </section>
+  
+  <footer>
+  		<ul>
+             <a href=".."><li>交易提醒</li></a>
+             <a href=".."><li>聯絡我們</li></a>
+        </ul>
+  </footer>
+
+</body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=1453336538238575&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</html>
+
+
+
+
+

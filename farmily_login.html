@@ -1,11 +1,14 @@
-	<html>
-	<head>
-	  <meta charset="utf-8">
-	  <link rel="stylesheet" type="text/css" href="css/farmily_farmer_list.css">
-	  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
-	  <title>Farmer_list</title>
-	</head>
-	<body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="css/searchbar.css">
+  <link rel="stylesheet" type="text/css" href="css/farmily_login.css">
+  <title>登入 - Farmily | 農家</title>
+</head>
+<body>
   <header>   
    	<a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
    	<nav>
@@ -58,55 +61,52 @@
     </nav> 
   </header>
   
-	 
-	 <section>
-		
-		<br>
-		<p class="title">
-			<img src="img/leaf.png"></img>
-			<a>農友列表</a>
-		</p>
-		
-		
-		<div class="abgne_tab">
-		<ul class="tabs">
-			<li><a href="#tab1" onclick="getData(1,'北部')">北部</a></li>
-			<li><a href="#tab2" onclick="getData(1,'中部')">中部</a></li>
-			<li><a href="#tab3" onclick="getData(1,'南部')">南部</a></li>
-			<li><a href="#tab4" onclick="getData(1,'東部')">東部</a></li>
-			<li><a href="#tab5" onclick="getData(1,'外島')">外島</a></li>
-		</ul>
- 
-		<div class="tab_container">
-			<div id="tab1" class="tab_content">
-			</div>
-			<div id="tab2" class="tab_content">
-			</div>
-			<div id="tab3" class="tab_content">
-			</div>
-			<div id="tab4" class="tab_content">
-			</div>
-			<div id="tab5" class="tab_content">
-			</div>
+  <section>
+	<div class="content">
+		<div class="title">
+			<img class="list-img" src="img/leaf.png"></img>登入
+		</div>
+		<div class="form">
+			<form class="pure-form pure-form-stacked" method="submit" action="#">
+				<fieldset>
+					<div class="format">
+						<label>E-mail</label>
+		            	<input id="id" type="text" class="pure-input-rounded" placeholder="">
+	            	</div>
+	            	<div>
+						<label>密碼</label>
+		            	<input id="password" type="password" class="pure-input-rounded" placeholder="">
+	            	</div>
+	        		<div class="format">
+	        			<button type="submit" id="button" class="pure-button">登入</button>
+	        		</div>	
+				</fieldset>
+			</form>
 		</div>
 	</div>
-		
-		
-			
-		
-	 
-	 </section>
-	 
-	 <footer>
-			<ul>
-				 <li><a href="..">交易提醒</a></li>
-				 <li><a href="..">聯絡我們</a></li>
-			</ul>
-	  </footer>
+  </section>
+  
+  <footer>
+  		<ul>
+             <a href=".."><li>交易提醒</li></a>
+             <a href=".."><li>聯絡我們</li></a>
+        </ul>
+  </footer>
 
-	</body>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>  
-  <script type="text/javascript" src="js/farmer_list.js"></script>
-	</html>
+</body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=1453336538238575&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</html>
+
+
+
+
 
