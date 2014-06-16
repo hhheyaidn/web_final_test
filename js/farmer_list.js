@@ -32,6 +32,7 @@ $(function(){
 	});
 	$('#456').click(function(){
 		getData(1,'北部');
+		alert(1);
 	});
 });
 
