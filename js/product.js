@@ -29,7 +29,10 @@ $(function(){
 	});
 	$('#123').click(function(){
 		getData(1,'北部');
-	})
+	});
+	$('#456').click(function(){
+		getData(1,'五穀雜糧');
+	});
 });
 
 function getData(page,category){
