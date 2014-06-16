@@ -16,7 +16,7 @@ $(function(){
 		var $this = $(this),
 			_clickTab = $this.find('a').attr('href');
 			
-			console.log($this.li.textContext);
+			console.log($this.li);
 		// 把目前點擊到的 li 頁籤加上 .active
 		// 並把兄弟元素中有 .active 的都移除 class
 		$this.addClass('active').siblings('.active').removeClass('active');
