@@ -15,6 +15,8 @@ $(function(){
 		getData(1,'北部');
 		var $this = $(this),
 			_clickTab = $this.find('a').attr('href');
+			
+			console.log($this);
 		// 把目前點擊到的 li 頁籤加上 .active
 		// 並把兄弟元素中有 .active 的都移除 class
 		$this.addClass('active').siblings('.active').removeClass('active');
@@ -28,7 +30,6 @@ $(function(){
 });
 
 function getData(page,category){
-  alert(0);
  /* if(tab==="tab1"){
     $('#tab1').attr("checked","checked");
     $('#tab2').removeAttr("checked");
