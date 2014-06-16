@@ -18,6 +18,7 @@ ul, li {
 	clear: left;
 	width: 890px;
 	margin: 10px 0;
+	margin-left: 30px
 }
 ul.tabs {
 	width: 100%;
