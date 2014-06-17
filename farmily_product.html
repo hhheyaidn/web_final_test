@@ -25,8 +25,8 @@
            </ul>
          </div>
        </li>
-       <li class="main_nav_li" onClick="getData(1, '北部')">
-       	<a href="farmily_farmer_list.html">農友列表</a>
+       <li class="main_nav_li">
+       	<a href="farmily_farmer_list.html" id="aaa">農友列表</a>
        		<div class="sub">
            <ul>
              <li><a href="farmily_farmer_list.html" onClick="getData(1, '北部')">北部</a></li>
@@ -109,5 +109,13 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>  
   <script type="text/javascript" src="js/product.js"></script>
+  <script type="text/javascript">
+    $('#aaa').click(function (event) 
+    { 
+         event.preventDefault(); 
+		 getData(1,'北部');
+         //here you can also do all sort of things 
+    });
+</script>
 	</html>
 
