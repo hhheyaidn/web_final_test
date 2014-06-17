@@ -27,9 +27,18 @@ $(function(){
 	}).find('a').focus(function(){
 		this.blur();
 	});
+	
+	$("#myHref1").on('click', function() {
+   getData(1,'北部')
+   window.location = "farmily_farmer_list.html";
+});
+$("#myHref").on('click', function() {
+   getData(1,'五穀雜糧')
+   window.location = "farmily_product.html";
+});
 });
 
-function getData(page,category,tab){
+function getData(page,category){
   var limit = 15;
   var skip = (page-1) * limit;
   var Farmer = Parse.Object.extend("Farmer");
