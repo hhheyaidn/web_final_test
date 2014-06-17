@@ -28,7 +28,7 @@ $(function(){
 		this.blur();
 	});
 	
-	$("#myHref1).click( function() {
+	$("#myHref1").click( function() {
 	   window.location = "farmily_farmer_list.html";
 	getData(1,'北部');
 });
