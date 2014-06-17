@@ -14,7 +14,7 @@
        	<a href="index.html">首頁</a>
        </li>
        <li class="main_nav_li">
-         <a class="123" href="farmily_product.html">農產品</a>
+         <a href="farmily_product.html">農產品</a>
          <div class="sub">
            <ul>
              <li><a href="farmily_product.html" onClick="getData(1, '五榖雜糧')">五穀雜糧</a></li>
@@ -26,7 +26,7 @@
          </div>
        </li>
        <li class="main_nav_li">
-       	<a class="456" href="farmily_farmer_list.html">農友列表</a>
+       	<a href="farmily_farmer_list.html">農友列表</a>
        		<div class="sub">
            <ul>
              <li><a href="farmily_farmer_list.html" onClick="getData(1, '北部')">北部</a></li>
@@ -108,5 +108,50 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>  
   <script type="text/javascript" src="js/farmer_list.js"></script>
+  <script type="text/javascript">
+/*
+jQuery Url Plugin
+ * Version 1.0
+ * 2009-03-22 19:30:05
+ * URL: http://ajaxcssblog.com/jquery/url-read-get-variables/
+ * Description: jQuery Url Plugin gives the ability to read GET parameters from the actual URL
+ * Author: Matthias Jäggli
+ * Copyright: Copyright (c) 2009 Matthias Jäggli under dual MIT/GPL license.
+*/
+(function ($) {
+ $.url = {};
+ $.extend($.url, {
+  _params: {},
+  init: function(){
+   var paramsRaw = "";
+   try{
+    paramsRaw = 
+     (document.location.href.split("?", 2)[1] || "").split("#")[0].split("&") || [];
+    for(var i = 0; i< paramsRaw.length; i++){
+     var single = paramsRaw[i].split("=");
+     if(single[0])
+      this._params[single[0]] = unescape(single[1]);
+    }
+   }
+   catch(e){
+    alert(e);
+   }
+  },
+  param: function(name){
+   return this._params[name] || "";
+  },
+  paramAll: function(){
+   return this._params;
+  }
+ });
+ $.url.init();
+})(jQuery);
+  </script>
+  <script type="text/javascript">
+console.log($.url.param("name"));
+$(document).ready(function(){
+	call($.url.param('name'));
+})
+  </script>
 	</html>
 
