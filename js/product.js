@@ -28,12 +28,12 @@ $(function(){
 		this.blur();
 	});
 	$("#myHref1").on('click', function() {
-   getData(1,'北部')
    window.location = "farmily_farmer_list.html";
+    getData(1,'北部');
 });
 $("#myHref").on('click', function() {
-   getData(1,'五穀雜糧')
    window.location = "farmily_product.html";
+    getData(1,'五穀雜糧');
 });
 });
 
