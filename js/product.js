@@ -27,11 +27,11 @@ $(function(){
 	}).find('a').focus(function(){
 		this.blur();
 	});
-	$("#myHref1").on('click', function() {
+	$("#myHref1").click( function() {
    window.location = "farmily_farmer_list.html";
     getData(1,'北部');
 });
-$("#myHref").on('click', function() {
+$("#myHref").click( function() {
    window.location = "farmily_product.html";
     getData(1,'五穀雜糧');
 });
