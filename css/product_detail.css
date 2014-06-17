@@ -1,143 +1,262 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/product_detail.css">
-  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <title>農產品資訊 - Farmily | 農家</title>
-</head>
-<body>
-  <header>   
-   	<a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
-   	<nav>
-     <ul class="main_nav">
-       <li class="main_nav_li">
-       	<a href="index.html">首頁</a>
-       </li>
-       <li class="main_nav_li">
-         <a href="farmily_product.html">農產品</a>
-         <div class="sub">
-           <ul>
-             <li><a href="farmily_product.html" onClick="getData(1, '五榖雜糧')">五穀雜糧</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '蔬菜')">蔬菜</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '畜產/水產')">畜產/水產</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '水果')">水果</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '手製品')">手製品</a></li>
-           </ul>
-         </div>
-       </li>
-       <li class="main_nav_li">
-       	<a href="farmily_farmer_list.html">農友列表</a>
-       		<div class="sub">
-           <ul>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '北部')">北部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '中部')">中部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '南部')">南部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '東部')">東部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '外島')">外島</a></li>
-           </ul>
-         </div>
-       </li>
-       <li class="main_nav_li">
-       	<a href="farmily_aboutus.html">關於農家</a>
-       </li>
-       <div class="member">
-	       <li class="main_nav_li" id="registerButton">
-	       	<a class="member-btn" href="farmily_register.html">農友登記</a>
-	       </li>
-	       <li class="main_nav_li" id="loginButton">
-	       	<a class="member-btn" href="farmily_login.html">登入</a>
-	       </li>
-   	       <li class="main_nav_li" id="editButton">
-	       	<a class="member-btn" href="farm_edit.html">管理農園</a>
-	       </li>
-   	       <li class="main_nav_li" id="logoutButton">
-	       	<a class="member-btn" href="..">登出</a>
-	       </li>
-	   </div>
-     </ul>
-    </nav> 
-  </header>
-  
-  <section>
-  	<div class="content">
-		<div class="title">
-			<img src="img/leaf.png"></img>
-			農產品資訊
-		</div>
+body{
+	/*background: url(../img/background_3.jpg) repeat;*/
+	font-family: "Helvetica Neue",Arial,"HeitiTC","LiHei Pro","微軟正黑體","Microsoft Jhenghei",sans-serif;
+	margin: 0;
+}
 
-		<div class="product-detail">
+a{
+	text-decoration: none;
+	color: white;
+}
 
+footer{
+	height: 100px;
+	background: url(../img/footer.jpg) repeat;
+	position: relative;
+	top: 30px;
+	padding-left: 60px;
+	background-color: #336600;
+}
 
-			</div>
-			<div class="product-description">
-        <h3 class="description-title">關於農產品</h3>
-        <div id="farm-description">
-          
-        </div>
-        <h3 class="description-title">農產品敘述</h3>
-				<div id="product-description">
-			</div>
-		</div>		
+footer li{
+	font-size: 18px;
+	display: inline;
+	list-style: none;
+	position: relative;
+	top: 50px;
+	margin-left: 10px;
+	padding: 10px;
+}
 
-  </section>
-  
-  <footer>
-  		<ul>
-             <li><a href="..">交易提醒</a></li>
-             <li><a href="..">聯絡我們</a></li>
-        </ul>
-  </footer>
+footer a:hover{
+	color: #FF6;
+}
 
-</body>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
- <script type="text/javascript" src="farmer_list.js"></script>
- <script type="text/javascript">
-/*
-jQuery Url Plugin
- * Version 1.0
- * 2009-03-22 19:30:05
- * URL: http://ajaxcssblog.com/jquery/url-read-get-variables/
- * Description: jQuery Url Plugin gives the ability to read GET parameters from the actual URL
- * Author: Matthias Jäggli
- * Copyright: Copyright (c) 2009 Matthias Jäggli under dual MIT/GPL license.
-*/
-(function ($) {
- $.url = {};
- $.extend($.url, {
-  _params: {},
-  init: function(){
-   var paramsRaw = "";
-   try{
-    paramsRaw = 
-     (document.location.href.split("?", 2)[1] || "").split("#")[0].split("&") || [];
-    for(var i = 0; i< paramsRaw.length; i++){
-     var single = paramsRaw[i].split("=");
-     if(single[0])
-      this._params[single[0]] = unescape(single[1]);
-    }
-   }
-   catch(e){
-    alert(e);
-   }
-  },
-  param: function(name){
-   return this._params[name] || "";
-  },
-  paramAll: function(){
-   return this._params;
-  }
- });
- $.url.init();
-})(jQuery);
-  </script>
-  <script type="text/javascript">
-console.log($.url.param("name"));
-$(document).ready(function(){
-  callprod($.url.param('name'));
-})
-  </script>
-</html>
-</html>
+header{
+	background-color: #336600;
+	height: 90px;
+	padding: 0 100px 0 100px;
+	background: url(../img/banner.png) repeat;
+	margin-bottom: 20px;
+}
+
+header a:hover{
+	color: #FF6;
+}
+
+nav{
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+}
+
+.logo{
+	height: 80px;
+	margin: 5px 0 5px 0;
+	position: relative;
+	float: left;
+}
+
+.main_nav{
+	position: relative;
+	display: inline-block;
+}
+
+.main_nav_li{
+	font-size: 18px;
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	margin-left: 8px;
+}
+
+.main_nav_li > a{
+	padding: 3px 8px;
+}
+
+.member{
+	margin-left: 12px;
+	padding-left: 14px;
+	border-left: 1px #fff solid;
+	display: inline;
+}
+
+.member-btn{
+	font-size: 18px;
+	background-color: #FF6;
+	color: #360;
+	border-radius: 0.3em;
+	border: solid 2px #FF6;
+	margin-left: 8px;
+}
+
+.member-btn:hover{
+	color: #FF6;
+	background-color: #360;
+}
+
+.sub{
+	display: none;
+	left: 0;
+	margin: 1px 0 0;
+	overflow: hidden;
+	position: absolute;
+	width: 160px;
+	z-index: 6666;
+	border-radius: 0.3em;
+	box-shadow: rgb(155,155,155) 0px 1px 3px 0px;
+}
+
+.sub ul{
+	margin: 0;
+	list-style: none;
+	position: relative;
+	border: 5px solid #fff;
+	background: #fff;
+	width: 150px;
+	padding: 0px;
+}
+
+.sub li {
+	float: none;
+	margin: 0 0 1px;
+}
+
+.main_nav li:hover .sub{
+	display: block;
+}
+
+.sub a{
+	color: #5C5C5C;
+	display: block;
+	font-size: 14px;
+	height: 25px;
+	letter-spacing: 1px;
+	overflow: hidden;
+	margin: 0 0 0 10px;
+	padding: 4px 0 0 10px;
+	cursor: pointer;
+	outline: 0;
+}
+
+.sub li:hover{
+	background:#336600;
+}
+
+.sub li:hover a{
+	color:white;
+}
+
+section{
+	/*background-color: white;*/
+	background:url(../img/background_inner.jpg) repeat-y;
+	width: 950px;
+	position: relative;
+	/*left:50%;*/
+	top: 10px;
+	margin: 0px auto;
+	/*margin-left:-480px;*/
+	box-shadow: rgb(155,155,155) 0px 1px 10px 0px;
+	border-radius: 2em;
+	padding-bottom: 20px;
+}
+
+.content{
+	display: inline-block;
+	position: relative;
+	width: 950px;
+	border-radius: 2em;
+	padding: 20px 0;
+}
+
+.title{
+	position: relative;
+	padding-bottom: 5px;
+	border-bottom: 1px black solid;
+	margin: 0 30px 1.3em 30px;
+	width: 880px;
+	font-size: 24px;
+	color:black;
+}
+
+#product-catogory{
+	text-align: right;
+}
+
+#product-img{
+	width: 450px;
+	float: left;
+	position: relative;
+}
+
+.product-detail{
+	position: relative;
+	height: 300px;
+	margin: 0 40px;
+}
+
+.product-detail li{
+	margin: 5px 0;
+	list-style: none;
+	display: inline-block;
+	width: 100px;
+}
+
+#product-price{
+	font-size: 18px;
+}
+
+.product-info{
+	background-color: rgba(155,155,155,0.2);
+	padding: 15px;
+	display: inline;
+	width: 350px;
+	position: relative;
+	float: right;
+	border-radius: 0.7em;
+}
+
+#farmer-img{
+	border-radius: 50%;
+	width: 60px;
+	vertical-align: middle;
+	margin: 0 20px;
+}
+
+.product-description{
+	position: relative;
+	display: inline-block;
+	margin: 20px 10px;
+	width: 450px;
+}
+#product-title{
+	margin: .7em 0 5px .7em;
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
+}
+
+.description-title{
+	margin-top: 30px;
+	border-bottom: 3px #bbb solid;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	position: relative;
+	display: block;
+}
+
+#button{
+  text-align: center;
+  font-style: bold;
+  color: white;
+  border-radius: 40px;
+  background: #52AB75;
+  border-radius: 40px;
+  padding: 8px 40px;
+  position: relative;
+  float: left;
+  margin-left: 48px;
+}
+
+#button:hover{
+  background-color:#44c767;
+}
