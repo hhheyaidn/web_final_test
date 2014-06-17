@@ -29,7 +29,7 @@ $(function(){
 	});
 	
 	$("#myHref1").click( function() {
-	   window.location = "farmily_farmer_list.html";
+	   window.location.href = "farmily_farmer_list.html";
 	getData(1,'北部');
 });
 $("#myHref").click( function() {
