@@ -27,16 +27,6 @@ $(function(){
 	}).find('a').focus(function(){
 		this.blur();
 	});
-	
-	$("#myHref1").click( function() {
-	   window.location.url = "farmily_farmer_list.html";
-	   window.location.reload();
-	getData(1,'北部');
-});
-$("#myHref").click( function() {
-window.location = "farmily_product.html";
-   getData(1,'五穀雜糧');
-});
 });
 
 function getData(page,category){
