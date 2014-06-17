@@ -115,6 +115,7 @@ function call (id){
           })
         }
       }).then(function(){
+			console.log(objList);
           var banner = '<img src="'+objList[0].Farmer_Pic.url+'" class="farmer_head"><h2 class="slogan"><div id="farm-name">'+objList[0].Name+'</div><div id="farmer-name">'+objList[0].Name+'</div></h2>';
           $('.banner').append(banner);
           var description = '<p>'+objList[0].farm_story+'</p>';
